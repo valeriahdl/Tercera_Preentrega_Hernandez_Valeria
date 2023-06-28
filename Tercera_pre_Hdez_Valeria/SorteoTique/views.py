@@ -12,14 +12,15 @@ def draws(request):
     return render(request, "SorteoTique/draws.html")
 
 def clients(request):
-    return HttpResponse("Vista client")
+    return render(request, "SorteoTique/clients.html")
 
 def sellers(request):
-    return HttpResponse("Vista seller")
+    return render(request, "SorteoTique/sellers.html")
 
 def prizes(request):
-    return HttpResponse("Vista prize")
+    return render(request, "SorteoTique/prizes.html")
 
 def tickets(request):
-    return HttpResponse("Vista ticket")
+    #return HttpResponse("Vista ticket")
+    return render(request, "SorteoTique/tickets.html")
 

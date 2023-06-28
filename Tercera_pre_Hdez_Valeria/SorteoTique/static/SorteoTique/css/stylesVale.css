@@ -1,1 +1,12 @@
-body{background-color: blueviolet;}
+.navTextColor{
+    color: darkorchid !important;
+}
+
+.contenido{
+    margin-top: 50px !important;
+    padding: 20px;
+}
+
+.componenteEntregables{
+    background-color: thistle;
+}
