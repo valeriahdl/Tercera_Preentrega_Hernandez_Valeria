@@ -10,3 +10,12 @@
 .componenteEntregables{
     background-color: thistle;
 }
+
+#tableClients tr th{
+    padding-right: 120px;
+}
+#titleTbClients{
+    background-color: rgb(109,146,195) !important;
+    color: white;
+    border-radius: 3px;
+}

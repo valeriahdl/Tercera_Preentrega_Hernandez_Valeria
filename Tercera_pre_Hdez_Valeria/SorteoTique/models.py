@@ -14,6 +14,8 @@ class Client(models.Model):
     name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     email = models.EmailField()
+    def __str__(self):
+        return f"id_cliente: {self.client_id} - nombre: {self.name} - apellido: {self.last_name} - email: {self.email}"
     #pwd = models.CharField(max_length=30)
     #pwd_question = models.CharField(max_length=30)
 

@@ -1,9 +1,31 @@
 <div>
     {% extends "SorteoTique/inicio.html" %}
     {% load static %}
-    <div class="contenido">
+    
         {% block contenidoQueCambia %}
-        <p>test cliente</p>
+            <p>Clientes registrados</p>
+            <table id= "tableClients">
+                <tr id="titleTbClients">
+                    <th>Id del Cliente</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Email</th>
+                </tr>
+                
+                    {% for client in Clients%}
+                        <tr>
+                            <td>{{client.client_id}}</td>
+                            <td>{{client.name}}</td>
+                            <td>{{client.last_name}}</td>
+                            <td>{{client.email}}</td>
+                        </tr>
+                    {% endfor %}
+                    
+            </table>
+            <div class="formRegisterClient">
+                {% block setEstudiante %}
+                {% endblock %}
+            </div>          
+       
         {% endblock %}
-    </div>
 </div>

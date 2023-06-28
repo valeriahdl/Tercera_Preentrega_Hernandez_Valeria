@@ -1,0 +1,17 @@
+<div>
+    {% extends "SorteoTique/clients.html" %}
+    {% load static %}
+    
+    {% block registerClient %}
+
+        <form action="/SorteoTique/registerClient/" method="post"> {% csrf_token %}
+            <input placeholder="Id del Cliente" type = "text" name="client_id" required>
+            <input placeholder="Nombre" type = "text" name="name" required>
+            <input placeholder="Apellido" type = "text" name="last_name" required>
+            <input placeholder="Email" type = "email" name="email" required>
+
+            <input class="btn btn-primary"type = "submit" value="Enviar">
+        </form>
+        
+    {% endblock %}    
+</div>
