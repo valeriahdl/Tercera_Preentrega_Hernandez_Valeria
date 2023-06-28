@@ -6,9 +6,20 @@ from SorteoTique.models import *
 # Create your views here.
 
 def inicio(request):
-    return render(request,"SorteoTique/inicio.html")
+    return render(request, "SorteoTique/inicio.html")
 
-def test(request):
-    prueba = Client.objects.all()
-    return render(request, "SorteoTique/client.html",{"prueba": prueba})
-    
+def draws(request):
+    return render(request, "SorteoTique/draws.html")
+
+def clients(request):
+    return HttpResponse("Vista client")
+
+def sellers(request):
+    return HttpResponse("Vista seller")
+
+def prizes(request):
+    return HttpResponse("Vista prize")
+
+def tickets(request):
+    return HttpResponse("Vista ticket")
+
