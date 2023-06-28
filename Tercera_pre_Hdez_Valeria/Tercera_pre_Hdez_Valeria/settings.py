@@ -55,7 +55,7 @@ ROOT_URLCONF = "Tercera_pre_Hdez_Valeria.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ["/Users/valeriahernandez/Documents/Python/Tercera_preentrega_Hernandez_Valeria/Tercera_pre_Hdez_Valeria/Tercera_pre_Hdez_Valeria/plantillas/"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [

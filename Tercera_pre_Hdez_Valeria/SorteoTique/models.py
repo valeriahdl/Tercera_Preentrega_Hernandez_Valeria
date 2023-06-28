@@ -14,8 +14,8 @@ class Client(models.Model):
     name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     email = models.EmailField()
-    pwd = models.CharField(max_length=30)
-    pwd_question = models.CharField(max_length=30)
+    #pwd = models.CharField(max_length=30)
+    #pwd_question = models.CharField(max_length=30)
 
 #quien vende el boleto
 class Seller(models.Model):
@@ -23,7 +23,7 @@ class Seller(models.Model):
     seller_name = models.CharField(max_length=30)
     seller_last_name = models.CharField(max_length=30)
     email = models.EmailField()
-    pwd = models.CharField(max_length=30)
+   # pwd = models.CharField(max_length=30)
     
 #lista de premios de todos los sorteos
 class Prize(models.Model):
